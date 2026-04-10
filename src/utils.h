@@ -336,7 +336,10 @@ void print_transformed_bond_file(const std::vector<Bond>& bonds,
     std::cout << "[sites]=" << n << std::endl;
     for (unsigned int p = 0; p < n; ++p) {
         const Site& s = sites_list[inv_perm[p]];
-        std::cout << p << " " << s.x << " " << s.y << " " << s.z << std::endl;
+        std::cout << p << " "
+                  << std::setprecision(16) << s.x << " " 
+                  << std::setprecision(16) << s.y << " " 
+                  << std::setprecision(16) << s.z << std::endl;
     }
     std::cout << "[interactions]=" << bonds.size() << std::endl;
     for (size_t k = 0; k < bonds.size(); ++k) {
