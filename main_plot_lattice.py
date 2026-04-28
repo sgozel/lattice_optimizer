@@ -44,7 +44,7 @@ lattices = []
 #::::::::::::::::::::::::::::::::::::::
 # TRIANGLE NS=16
 #::::::::::::::::::::::::::::::::::::::
-
+'''
 lattices.append({
     'lattform': 'triangle',
     'Ns': int(16),
@@ -52,11 +52,11 @@ lattices.append({
     'typelatt': 'original', 
     'couplingdetails': 'J',
     'dc': {'J': 1.0}})
-
+'''
 #::::::::::::::::::::::::::::::::::::::
 # TRIANGLE NS=20
 #::::::::::::::::::::::::::::::::::::::
-
+'''
 lattices.append({
     'lattform': 'triangle',
     'Ns': int(20),
@@ -64,7 +64,7 @@ lattices.append({
     'typelatt': 'original',
     'couplingdetails': 'J',
     'dc': {'J': 1.0}})
-
+'''
 #::::::::::::::::::::::::::::::::::::::
 # TRIANGLE NS=21
 #::::::::::::::::::::::::::::::::::::::
@@ -73,14 +73,22 @@ lattices.append({
     'lattform': 'triangle',
     'Ns': int(21),
     'lattid': int(10421),
-    'typelatt': 'original',
+    'typelatt': 'optimized',
+    'couplingdetails': 'J',
+    'dc': {'J': 1.0}})
+
+lattices.append({
+    'lattform': 'triangle',
+    'Ns': int(21),
+    'lattid': int(10821),
+    'typelatt': 'optimized',
     'couplingdetails': 'J',
     'dc': {'J': 1.0}})
 
 #::::::::::::::::::::::::::::::::::::::
 # TRIANGLE NS=24
 #::::::::::::::::::::::::::::::::::::::
-
+'''
 lattices.append({
     'lattform': 'triangle',
     'Ns': int(24),
@@ -88,11 +96,11 @@ lattices.append({
     'typelatt': 'optimized',
     'couplingdetails': 'J',
     'dc': {'J': 1.0, 'Jp': math.sqrt(3)}})
-
+'''
 #::::::::::::::::::::::::::::::::::::::
 # SQUARE NS=25
 #::::::::::::::::::::::::::::::::::::::
-
+'''
 lattices.append({
     'lattform': 'square',
     'Ns': int(25),
@@ -100,11 +108,11 @@ lattices.append({
     'typelatt': 'original', # 'original'
     'couplingdetails': 'J',
     'dc': {'J': 1.0}})
-
+'''
 #::::::::::::::::::::::::::::::::::::::
 # TRIANGLE NS=28
 #::::::::::::::::::::::::::::::::::::::
-
+'''
 lattices.append({
     'lattform': 'triangle',
     'Ns': int(28),
@@ -112,7 +120,7 @@ lattices.append({
     'typelatt': 'optimized',
     'couplingdetails': 'J',
     'dc': {'J': 1.0, 'Jp': math.sqrt(3)}})
-
+'''
 #=============================
 # PLOT LATTICES
 #=============================
