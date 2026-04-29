@@ -26,7 +26,7 @@ BRAVAIS_VECS = {
 SIMU_TORUS = {
     'triangle': {
         int(16): {
-            int(10315): {'t1': np.array([4.0, 0.0]),
+            int(40004): {'t1': np.array([4.0, 0.0]),
                          't2': np.array([0.0, 4.0])}},
         int(20): {
             int(10820): {'t1': np.array([2.0, -4.0]),

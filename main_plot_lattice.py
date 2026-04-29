@@ -44,15 +44,15 @@ lattices = []
 #::::::::::::::::::::::::::::::::::::::
 # TRIANGLE NS=16
 #::::::::::::::::::::::::::::::::::::::
-'''
+
 lattices.append({
     'lattform': 'triangle',
     'Ns': int(16),
-    'lattid': int(10315),
-    'typelatt': 'original', 
+    'lattid': int(40004),
+    'typelatt': 'optimized', 
     'couplingdetails': 'J',
     'dc': {'J': 1.0}})
-'''
+
 #::::::::::::::::::::::::::::::::::::::
 # TRIANGLE NS=20
 #::::::::::::::::::::::::::::::::::::::
@@ -68,7 +68,7 @@ lattices.append({
 #::::::::::::::::::::::::::::::::::::::
 # TRIANGLE NS=21
 #::::::::::::::::::::::::::::::::::::::
-
+'''
 lattices.append({
     'lattform': 'triangle',
     'Ns': int(21),
@@ -84,7 +84,7 @@ lattices.append({
     'typelatt': 'optimized',
     'couplingdetails': 'J',
     'dc': {'J': 1.0}})
-
+'''
 #::::::::::::::::::::::::::::::::::::::
 # TRIANGLE NS=24
 #::::::::::::::::::::::::::::::::::::::
@@ -153,5 +153,5 @@ for lattice in lattices:
                         plot_bonds=True,
                         show_numbering=True)
     ax.set_title(f'{lattform.title()}, $N_s = {Ns}$ ({lattid}) [bw={bw}, ops={ops}]')
-    # outfigname = os.path.join(rootdir, os.path.basename(filename)[:-8]+'.png')
-    # fig.savefig(outfigname, format='png')
+    outfigname = os.path.join(rootdir, os.path.basename(filename)[:-8]+'.png')
+    fig.savefig(outfigname, format='png')
