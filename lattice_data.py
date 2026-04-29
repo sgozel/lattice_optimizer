@@ -29,6 +29,8 @@ SIMU_TORUS = {
             int(40004): {'t1': np.array([4.0, 0.0]),
                          't2': np.array([0.0, 4.0])}},
         int(20): {
+            int(10520): {'t1': np.array([1.0, 5.0]),
+                         't2': np.array([4.0, 0.0])},
             int(10820): {'t1': np.array([2.0, -4.0]),
                          't2': np.array([3.0, 4.0])}},
         int(21): {
