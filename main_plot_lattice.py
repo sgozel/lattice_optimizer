@@ -42,6 +42,18 @@ def get_filename(lattform, Ns, lattid, typelatt, couplingdetails):
 lattices = []
 
 #::::::::::::::::::::::::::::::::::::::
+# TRIANGLE NS=12
+#::::::::::::::::::::::::::::::::::::::
+
+lattices.append({
+    'lattform': 'triangle',
+    'Ns': int(12),
+    'lattid': int(20206),
+    'typelatt': 'optimized',
+    'couplingdetails': 'J',
+    'dc': {'J': 1.0}})
+
+#::::::::::::::::::::::::::::::::::::::
 # TRIANGLE NS=16
 #::::::::::::::::::::::::::::::::::::::
 '''
@@ -56,7 +68,7 @@ lattices.append({
 #::::::::::::::::::::::::::::::::::::::
 # TRIANGLE NS=20
 #::::::::::::::::::::::::::::::::::::::
-
+'''
 lattices.append({
     'lattform': 'triangle',
     'Ns': int(20),
@@ -65,7 +77,6 @@ lattices.append({
     'couplingdetails': 'J',
     'dc': {'J': 1.0}})
 
-'''
 lattices.append({
     'lattform': 'triangle',
     'Ns': int(20),
@@ -157,10 +168,10 @@ for lattice in lattices:
     latt = lattice_plotter.Lattice(filename, 
                                    dc=lattice['dc'], 
                                    simu_torus=SIMU_TORUS[lattform][lattice['Ns']][lattice['lattid']],
-                                   bravais_vecs=BRAVAIS_VECS[lattice['lattform']][lattice['Ns']])
+                                   bravais_vecs=BRAVAIS_VECS[lattice['lattform']])
     fig, ax = latt.plot(plot_simu_torus=True,
                         plot_bonds=True,
                         show_numbering=True)
     ax.set_title(f'{lattform.title()}, $N_s = {Ns}$ ({lattid}) [bw={bw}, ops={ops}]')
-    # outfigname = os.path.join(rootdir, os.path.basename(filename)[:-8]+'.png')
-    # fig.savefig(outfigname, format='png')
+    outfigname = os.path.join(rootdir, os.path.basename(filename)[:-8]+'.png')
+    fig.savefig(outfigname, format='png')
