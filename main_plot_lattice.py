@@ -41,10 +41,23 @@ def get_filename(lattform, Ns, lattid, typelatt, couplingdetails):
 
 lattices = []
 
+
 #::::::::::::::::::::::::::::::::::::::
 # TRIANGLE NS=12
 #::::::::::::::::::::::::::::::::::::::
 
+lattices.append({
+    'lattform': 'triangle',
+    'Ns': int(8),
+    'lattid': int(10208),
+    'typelatt': 'original',
+    'couplingdetails': 'J',
+    'dc': {'J': 1.0}})
+
+#::::::::::::::::::::::::::::::::::::::
+# TRIANGLE NS=12
+#::::::::::::::::::::::::::::::::::::::
+'''
 lattices.append({
     'lattform': 'triangle',
     'Ns': int(12),
@@ -52,7 +65,7 @@ lattices.append({
     'typelatt': 'optimized',
     'couplingdetails': 'J',
     'dc': {'J': 1.0}})
-
+'''
 #::::::::::::::::::::::::::::::::::::::
 # TRIANGLE NS=16
 #::::::::::::::::::::::::::::::::::::::
@@ -173,5 +186,5 @@ for lattice in lattices:
                         plot_bonds=True,
                         show_numbering=True)
     ax.set_title(f'{lattform.title()}, $N_s = {Ns}$ ({lattid}) [bw={bw}, ops={ops}]')
-    outfigname = os.path.join(rootdir, os.path.basename(filename)[:-8]+'.png')
-    fig.savefig(outfigname, format='png')
+    # outfigname = os.path.join(rootdir, os.path.basename(filename)[:-8]+'.png')
+    # fig.savefig(outfigname, format='png')
