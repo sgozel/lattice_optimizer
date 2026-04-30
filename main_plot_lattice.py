@@ -43,9 +43,9 @@ lattices = []
 
 
 #::::::::::::::::::::::::::::::::::::::
-# TRIANGLE NS=12
+# TRIANGLE NS=8
 #::::::::::::::::::::::::::::::::::::::
-
+'''
 lattices.append({
     'lattform': 'triangle',
     'Ns': int(8),
@@ -53,7 +53,7 @@ lattices.append({
     'typelatt': 'original',
     'couplingdetails': 'J',
     'dc': {'J': 1.0}})
-
+'''
 #::::::::::::::::::::::::::::::::::::::
 # TRIANGLE NS=12
 #::::::::::::::::::::::::::::::::::::::
@@ -66,6 +66,18 @@ lattices.append({
     'couplingdetails': 'J',
     'dc': {'J': 1.0}})
 '''
+#::::::::::::::::::::::::::::::::::::::
+# TRIANGLE NS=14
+#::::::::::::::::::::::::::::::::::::::
+
+lattices.append({
+    'lattform': 'triangle',
+    'Ns': int(14),
+    'lattid': int(10314),
+    'typelatt': 'optimized',
+    'couplingdetails': 'J',
+    'dc': {'J': 1.0}})
+
 #::::::::::::::::::::::::::::::::::::::
 # TRIANGLE NS=16
 #::::::::::::::::::::::::::::::::::::::
