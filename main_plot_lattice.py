@@ -45,7 +45,7 @@ lattices = []
 #::::::::::::::::::::::::::::::::::::::
 # TRIANGLE NS=7
 #::::::::::::::::::::::::::::::::::::::
-
+'''
 lattices.append({
     'lattform': 'triangle',
     'Ns': int(7),
@@ -53,7 +53,7 @@ lattices.append({
     'typelatt': 'original',
     'couplingdetails': 'J',
     'dc': {'J': 1.0}})
-
+'''
 #::::::::::::::::::::::::::::::::::::::
 # TRIANGLE NS=8
 #::::::::::::::::::::::::::::::::::::::
@@ -74,9 +74,9 @@ lattices.append({
     'lattform': 'triangle',
     'Ns': int(12),
     'lattid': int(20206),
-    'typelatt': 'optimized',
-    'couplingdetails': 'J',
-    'dc': {'J': 1.0}})
+    'typelatt': 'original',
+    'couplingdetails': 'JJp',
+    'dc': {'J': 1.0, 'Jp': math.sqrt(3)}})
 '''
 #::::::::::::::::::::::::::::::::::::::
 # TRIANGLE NS=14
@@ -98,29 +98,38 @@ lattices.append({
     'lattform': 'triangle',
     'Ns': int(16),
     'lattid': int(40004),
-    'typelatt': 'optimized', 
-    'couplingdetails': 'J',
-    'dc': {'J': 1.0}})
+    'typelatt': 'original', 
+    'couplingdetails': 'JJp',
+    'dc': {'J': 1.0, 'Jp': math.sqrt(3)}})
 '''
 #::::::::::::::::::::::::::::::::::::::
 # TRIANGLE NS=20
 #::::::::::::::::::::::::::::::::::::::
+
+lattices.append({
+    'lattform': 'triangle',
+    'Ns': int(20),
+    'lattid': int(20210),
+    'typelatt': 'original',
+    'couplingdetails': 'JJp',
+    'dc': {'J': 1.0, 'Jp': math.sqrt(3)}})
+
 '''
 lattices.append({
     'lattform': 'triangle',
     'Ns': int(20),
     'lattid': int(10520),
-    'typelatt': 'optimized',
-    'couplingdetails': 'J',
-    'dc': {'J': 1.0}})
+    'typelatt': 'original',
+    'couplingdetails': 'JJp',
+    'dc': {'J': 1.0, 'Jp': math.sqrt(3)}})
 
 lattices.append({
     'lattform': 'triangle',
     'Ns': int(20),
     'lattid': int(10820),
     'typelatt': 'original',
-    'couplingdetails': 'J',
-    'dc': {'J': 1.0}})
+    'couplingdetails': 'JJp',
+    'dc': {'J': 1.0, 'Jp': math.sqrt(3)}})
 '''
 #::::::::::::::::::::::::::::::::::::::
 # TRIANGLE NS=21
