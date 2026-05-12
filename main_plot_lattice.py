@@ -105,7 +105,7 @@ lattices.append({
 #::::::::::::::::::::::::::::::::::::::
 # TRIANGLE NS=20
 #::::::::::::::::::::::::::::::::::::::
-
+'''
 lattices.append({
     'lattform': 'triangle',
     'Ns': int(20),
@@ -114,7 +114,6 @@ lattices.append({
     'couplingdetails': 'JJp',
     'dc': {'J': 1.0, 'Jp': math.sqrt(3)}})
 
-'''
 lattices.append({
     'lattform': 'triangle',
     'Ns': int(20),
@@ -163,6 +162,13 @@ lattices.append({
     'couplingdetails': 'J',
     'dc': {'J': 1.0, 'Jp': math.sqrt(3)}})
 '''
+lattices.append({
+    'lattform': 'triangle',
+    'Ns': int(24),
+    'lattid': int(20412),
+    'typelatt': 'optimized',
+    'couplingdetails': 'J',
+    'dc': {'J': 1.0, 'Jp': math.sqrt(3)}})
 #::::::::::::::::::::::::::::::::::::::
 # SQUARE NS=25
 #::::::::::::::::::::::::::::::::::::::
