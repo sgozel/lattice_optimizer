@@ -167,7 +167,7 @@ lattices.append({
     'Ns': int(24),
     'lattid': int(20412),
     'typelatt': 'optimized',
-    'couplingdetails': 'J',
+    'couplingdetails': 'JJp',
     'dc': {'J': 1.0, 'Jp': math.sqrt(3)}})
 #::::::::::::::::::::::::::::::::::::::
 # SQUARE NS=25
@@ -225,5 +225,5 @@ for lattice in lattices:
                         plot_bonds=True,
                         show_numbering=True)
     ax.set_title(f'{lattform.title()}, $N_s = {Ns}$ ({lattid}) [bw={bw}, ops={ops}]')
-    # outfigname = os.path.join(rootdir, os.path.basename(filename)[:-8]+'.png')
-    # fig.savefig(outfigname, format='png')
+    outfigname = os.path.join(rootdir, os.path.basename(filename)[:-8]+'.png')
+    fig.savefig(outfigname, format='png')
